@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* App Colors */
+  --color-primary: var(--color-purple);
+  --color-primary-variant: var(--color-gray);
+  --color-text: var(--color-black);
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-purple: rgb(198, 201, 252);
+  --color-gray: rgb(56,52,49);
+}
+
+li, ul, div {
+  list-style-type: none;
+}
+
+.main {
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+.main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.main button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 30px;
+  background: var(--color-primary)
+}
+
+.list-bg {
+  background: rgb(249, 250, 255);
+  padding: 1rem 5rem
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 5px;
+  box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.list-item .title {
+  font-size: 1.2rem;
+}
+
+.list-item .item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.list-item h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+.list-item p {
+  color: grey;
+  margin : 5px 0px;
+} 
+
+.navbar {
+  background: white;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  border-bottom: 1px solid var(--color-primary);
+  font-size: 1.2rem;
+}
+
+.nav-inner {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  font-weight: bold;
+} 
+
+.dark-mode .navbar {
+  background: #222;
+  color: white;
+}
+.dark-mode .navbar a{
+  color: white;
+} 
